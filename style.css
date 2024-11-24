@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Signika Negative", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background: linear-gradient(#313131, #151515);
+  color: #fff;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player {
+  width: 35rem;
+  height: 70rem;
+  background: linear-gradient(to right, #313234, #2f3031);
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.4);
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.player-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.player-btn {
+  width: 4rem;
+  height: 4rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  background-color: #2b2c2e;
+  color: #a8a9ab;
+  box-shadow: 0.5rem 0.5rem 2rem -0.1rem rgba(0, 0, 0, 0.5),
+    -0.4rem -0.4rem 2rem -0.1rem rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.player-btn:active {
+  transform: translateY(0.2rem);
+}
+
+.player-top span {
+  font-size: 1.3rem;
+  color: #a8a9ab;
+}
+
+.player-body {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-song img {
+  width: 100%;
+  box-shadow: 0.6rem 0.6rem 4rem -0.1rem rgba(0, 0, 0, 0.9),
+    -0.6rem -0.6rem 4rem -0.2rem rgba(255, 255, 255, 0.4);
+}
+
+
+.song-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.song-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-name {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.song-artist {
+  font-size: 1.2rem;
+  color: #a8a9ab;
+}
+
+.song-info i {
+  font-size: 2rem;
+  background: linear-gradient(to right, #3baa7b, #62bc68);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.play-pause {
+  width: 5rem;
+  height: 5rem;
+  background: linear-gradient(to right, #3baa7b, #62bc68);
+  color: #fff;
+  box-shadow: 0.5rem 0.5rem 2rem -0.1rem rgba(0, 0, 0, 0.8),
+    -0.8rem -0.8rem 2rem -0.1rem rgba(255, 255, 255, 0.4);
+}
+.footer img{
+ margin-top: -2rem;
+  opacity: 75%;
+  margin-left: 25%;
+  width: 50%;
+}
+body.dark-mode {
+  background: #ddd;
+  color: black;
+}
+
+#dark-mode-toggle {
+  width: 4rem;
+  height: 4rem;
+  background: #2b2c2e;
+  border-radius: 50%;
+  color: #a8a9ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#dark-mode-toggle:focus {
+  outline: none;
+}
+
+#dark-mode-toggle i {
+  font-size: 1.5rem;
+}
+/* btn disable */
+button:disabled {
+  background-color: #666;
+  color: #aaa; 
+  box-shadow: none;
+  opacity: 0.5;
+}
